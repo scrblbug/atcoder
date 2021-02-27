@@ -22,7 +22,7 @@ def main():
     # 以下いろいろと事前計算しておく
     # 階乗
     fact = [1]
-    for i in range(1, 10**5 * 2 + 1):
+    for i in range(1, 2 * 10**5 + 1):
         fact.append((fact[-1] * i) % MOD)
 
     # 逆元
@@ -32,19 +32,15 @@ def main():
     # rRA = -qaAR   （両辺にARを掛ける）
     # A = -qR       （rR = 1, aA = 1より）
     inv = [1, 1]
-    for i in range(2, 10**5+1):
+    for i in range(2, 10**5 + 1):
         inv.append((-(MOD // i) * inv[MOD % i]) % MOD)
     
     # 逆元の階乗
     fact_inv = [1, 1]
-    for i in range(2, 10**5+1):
+    for i in range(2, 10**5 + 1):
         fact_inv.append((fact_inv[-1] * inv[i]) % MOD)
 
-    # 進む歩数は実際にはW-1, H-1歩
-    W -= 1
-    H -= 1
-    
-    result = (fact[W+H] * fact_inv[W] * fact_inv[H]) % MOD
+    result = (fact[W-1+H-1] * fact_inv[W-1] * fact_inv[H-1]) % MOD
     print(result)
 
 main()
