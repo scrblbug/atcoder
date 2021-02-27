@@ -1,3 +1,11 @@
+# AtCoder Beginner Contest 067 D - Fennec VS. Snuke
+# https://atcoder.jp/contests/abc067/tasks/arc078_b
+# tag: 対戦ゲーム グラフ 木 距離
+
+# 結局のところ、各マスについてそれぞれ
+# 黒初期マス 0, 白初期マス N-1 のどちらに近いかで、
+# 塗られる色が決定される
+
 from collections import deque
 def main():
     N = int(input())
@@ -9,11 +17,7 @@ def main():
         paths[a-1].append(b-1)
         paths[b-1].append(a-1)
 
-    # 結局のところ、各マスについてそれぞれ
-    # 黒初期マス 0, 白初期マス N-1 のどちらに近いかで、
-    # 塗られる色が決定される
     # BFSを2回で距離を出しておき、最後に比較スキャン
-
     # 初期黒マスからの、各マスへの距離を求める
     black = [-1] * N
     black[0] = 0

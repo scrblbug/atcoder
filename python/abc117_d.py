@@ -1,3 +1,12 @@
+# AtCoder Beginner Contest 117 D - XXOR
+# https://atcoder.jp/contests/abc117/tasks/abc117_d
+# tag: ビット演算 XOR 桁DP
+
+# ビット毎に独立して考える
+# 選ぶ数字 X によって、A を各ビット毎に反転させるかどうかを
+# 選ぶことが出来る。つまり、上限が無い場合は、ビットごとにAを見て
+# ビットが立っているのが少ないほうがベストな選択となる
+
 def main():
     N, K = map(int, input().split())
     A = list(map(int, input().split()))
@@ -5,9 +14,7 @@ def main():
     # 確認しなければならない桁数
     max_bit = max(max(A).bit_length(), K.bit_length())
 
-    # 上限が無い場合は、ビットごとにAを見て
-    # ビットが立っているのが少ないほうがベストな選択となる
-    # そこで、とりあえず各桁ごとの集計を取っておく
+    # とりあえず各桁ごとの集計を取っておく
     bit_cnts = []
     # ついでに、下 n 桁の最善手における合計値を計算しておく
     best_csum = [0]
@@ -24,7 +31,7 @@ def main():
 
     # Kを上限とし、上の桁から見ていく
     # Kを下回った桁から、ベストな選択を行っていく
-    # そこで、i 桁目から下回ると仮定し、全探索を行う
+    # そこで、i 桁目から下回ると仮定して、i の全探索を行う
     # 下回ることが可能な桁は、K のビットが立っている桁に限定される
     search_bits = []
     for i in range(max_bit):
