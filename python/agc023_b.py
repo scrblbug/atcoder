@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 023 B - Find Symmetries
 # https://atcoder.jp/contests/agc023/tasks/agc023_b
-# tag: グリッド 対称 数え上げ
+# tag: グリッド 対称判定
 
 # 上下、左右が循環するタイプのマップをずらして配置した際に、
 # x=y の軸に対して線対称となっているような
