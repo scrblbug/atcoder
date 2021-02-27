@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 034 C - 経路
 # https://atcoder.jp/contests/abc034/tasks/abc034_c
-# tag: 順列組み合わせ 数え上げ 階乗 逆元 MOD
+# tag: 順列組み合わせ 階乗 逆元 MOD
 
 # W, H <= 10**5 なので、よくやるO(WH)のDPでは間に合わない
 # つまり、数学的にショートカットしてやる必要がある
