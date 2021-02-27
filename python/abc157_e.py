@@ -1,6 +1,6 @@
 # AtCoder Beginners Contest 157 E - Stimple String Queries
 # https://atcoder.jp/contests/abc157/tasks/abc157_e
-# 範囲クエリ 典型問題 セグメント木
+# tag: 範囲クエリ 典型問題 セグメント木
 
 # セグメント木でどの文字を持っているかを管理してやる
 
