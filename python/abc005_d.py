@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 005 D - おいしいたこ焼きの焼き方
 # https://atcoder.jp/contests/abc005/tasks/abc005_4
-# tag: グリッド 累積和 因数分解
+# tag: グリッド 累積和
 
 # 店員が焼けるたこ焼きの数の「上限」となっているので、
 # 結局のところ「一度に焼くたこ焼きの数」（1～N^2）ごとに、
