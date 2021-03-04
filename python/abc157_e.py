@@ -91,9 +91,10 @@ def main():
     Q = int(input())
     queries = [list(input().split()) for _ in range(Q)]
 
+    # set()を作成して管理してもいいが、ここでは
     # ある文字を持っているかどうかを010010...といった
-    # ビットで管理する。そのため、あらかじめ文字→インデックスの
-    # 辞書を作成しておく。
+    # ビットで管理することにした。
+    # そのため、あらかじめ文字→インデックスの辞書を作成。
     # ちなみに{chr(i+97):i for i in range(26)}
     # みたいな書き方もできる
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -104,16 +105,19 @@ def main():
     # op = (x, y) => x | y となる
     segtree = Segment_Tree(N, lambda x, y: x | y, ie=0)
 
-    # 値を直接配列に放り込んでいった後、初期化する
+    # 管理ビット値を直接配列に放り込んでいった後、初期化
     for i, c in enumerate(S):
         segtree.tree[segtree.offset + i] = 1<<char_to_idx[c]
     segtree.refresh()
 
+    # 後はセグ木に全部やらせるだけ
     for op, a, b in queries:
         if op == '1':
             segtree.set(int(a)-1, 1<<char_to_idx[b])
         else:
             tmp_r = segtree.rangeq(int(a)-1, int(b))
+
+            # いわゆるbitcountだが、この書き方が簡単かつそれなりに速い
             print(bin(tmp_r).count('1'))
 
 main()
