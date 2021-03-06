@@ -9,8 +9,10 @@ class Weighted_Union_Find:
         self.parent = [-1] * N
         self.rank = [0] * N
         self.weight = [0] * N
+        self.group_count = N
         self.N = N
-    
+
+    #最上位の親(グループリーダー)を取得
     def find(self, x):
         # parent が負数なら、自分がリーダー
         if self.parent[x] < 0:
@@ -23,24 +25,31 @@ class Weighted_Union_Find:
         self.parent[x] = leader
 
         return leader
-    
+
+    # xとyのグループを統合しつつ、(統合先リーダー, 統合元リーダー)を返す
+    # 統合不要なら(-1, -1)を返し、矛盾する値が来たらエラーを返す
     def unite(self, x, y, w):
         lx, ly = self.find(x), self.find(y)
+
+        # そもそも同じグループにいる場合、何もしない
         if lx == ly:
+            # が、値が矛盾する場合はエラーを返す
             if self.get_diff(x, y) != w:
                 raise ValueError ('value contradiction detected')
             else:
                 return (-1, -1)
     
         lx_to_ly = self.weight[x] - self.weight[y] + w
+        self.group_count -= 1
 
-        # 同じ深さのときは、とりあえず x の下に y をつけ、深さを更新
+        # 同じ高さのときは、とりあえず x の下に y をつけ、高さを更新
         if self.rank[lx] == self.rank[ly]:
             self.parent[ly] = lx
             self.weight[ly] = lx_to_ly
             self.rank[x] += 1
             return (lx, ly)
         
+        # 高さが違う場合は、高い方に低い方をつける
         if self.rank[lx] < self.rank[ly]:
             lx, ly = ly, lx
             lx_to_ly = - lx_to_ly
@@ -49,6 +58,8 @@ class Weighted_Union_Find:
         self.weight[ly] = lx_to_ly
         return (lx, ly)
 
+    # 同じリーダーの下なら（＝比較可能なら）距離を返す
+    # 違ったら None を投げておく
     def get_diff(self, x, y):
         if self.find(x) == self.find(y):
             return self.weight[y] - self.weight[x]
