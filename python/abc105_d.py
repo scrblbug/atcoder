@@ -19,7 +19,7 @@ def main():
     csum = [0]
     for a in A:
         csum.append(csum[-1] + a)
-    
+
     # 辞書を作成し、各剰余の数を格納していく。
     # （リストだと M が大きい場合問題になる）
     mod_cnt = dict()
@@ -27,14 +27,14 @@ def main():
         if s % M not in mod_cnt:
             mod_cnt[s % M] = 0
         mod_cnt[s % M] += 1
-    
+
     # 各剰余の個数毎に、答えを足し合わせていく
     # n 個から2個選ぶ組み合わせの数なので、n(n-1)/2 個ずつ増える
     result = 0
     for cnt in mod_cnt.values():
         if cnt > 0:
             result += (cnt * (cnt - 1)) // 2
-    
+
     print(result)
 
 main()
