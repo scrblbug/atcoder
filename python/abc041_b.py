@@ -51,6 +51,7 @@ def main():
         else:
             return False
 
+    # 二分探索
     # low: 採用されない high: 採用される
     low = -1
     high = len(scores) - 1
