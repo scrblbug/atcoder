@@ -24,9 +24,12 @@ def main():
     cnt = 0
     while cnt < K:
         n = dq.popleft()
+        # 最後の桁が 0 以外なら、abc から abc(c-1)を作成し、キューに入れる
         if n % 10 != 0:
             dq.append(n * 10 + n % 10 - 1)
+        # abc から abcc を作成し、キューに入れる
         dq.append(n * 10 + n % 10)
+        # 最後の桁が 9 以外なら、abc から abc(c+1)を作成し、キューに入れる
         if n % 10 != 9:
             dq.append(n * 10 + n % 10 + 1)
         cnt += 1
