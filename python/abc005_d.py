@@ -37,8 +37,8 @@ def main():
     max_taste = [0] * (N*N + 1)
     for sy in range(N):
         for sx in range(N):
-            for ex in range(sx, N):
-                for ey in range(sy, N):
+            for ey in range(sy, N):
+                for ex in range(sx, N):
                     n_tako = (ex-sx+1) * (ey-sy+1)
                     taste = get_sum(sx, sy, ex, ey)
                     if max_taste[n_tako] < taste:
