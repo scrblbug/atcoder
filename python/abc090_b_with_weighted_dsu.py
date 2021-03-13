@@ -1,6 +1,6 @@
 # AtCoder Beginners Contest 090 D - People on a Line
 # https://atcoder.jp/contests/abc087/tasks/arc090_b
-# グラフ 連結成分 重み付きUnion-Find 典型問題
+# tag: グラフ 連結成分 重み付きUnion-Find 典型問題
 
 # 重み付きUnion-Findを用いると簡単に解ける典型問題。
 

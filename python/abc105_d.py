@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 105 D - Candy Distribution
 # https://atcoder.jp/contests/abc105/tasks/abc105_d
-# 累積和 MOD
+# tag: 累積和 MOD
 
 # 初見だと、発想力が問われる問題。
 # 累積和を取るまではいいとして、(l, r)を全探索すると間に合わない。
