@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest D - ..(Double Dots)
 # https://atcoder.jp/contests/abc168/tasks/abc168_d
-# tag: グラフ BFS
+# tag: グラフ BFS 典型問題
 
 # 部屋を頂点、通路を辺とするグラフを作成する。
 # 問題の設定とは逆に、部屋1 からスタートすると考え、
