@@ -1,4 +1,4 @@
-# 第一回日本最強プログラマー学生選手権-予選- B - Kleene Inversion
+# 第一回日本最強プログラマー学生選手権-予選 B - Kleene Inversion
 # https://atcoder.jp/contests/jsc2019-qual/tasks/jsc2019_qual_b
 # tag: 転倒数
 
