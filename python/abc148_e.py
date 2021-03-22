@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 148 E - Double Factorial
 # https://atcoder.jp/contests/abc148/tasks/abc148_e
-# tag: 発想力
+# tag: 考察
 
 # 一つ飛ばしの階乗を考えた時の末尾の 0 を数える……
 # といった問題。

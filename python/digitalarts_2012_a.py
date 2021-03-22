@@ -4,7 +4,7 @@
 
 # 単語ごとの判定なので、単語にばらしてから各NGワードと
 # 比較していくのが簡単だと思われる。
-# 正規表現を用いてサボってもいいが、ここでは真面目に（？）
+# 正規表現を用いてもいいが、ここでは真面目に（？）
 # 実装してみることにした。
 from collections import defaultdict
 def main():
@@ -23,7 +23,10 @@ def main():
 
     result = []
 
-    # for ～ else 大好きっ子なので一見おぞましい書き方になっている。
+    # scrblbugは for (while) ～ else 大好きっ子なので、
+    # 一見おぞましい書き方になっている。
+    # ここでの else は、ループが途中で break されずに
+    # 最後まで回りきったときにのみ実行される。
     # 素直にフラッグを作成して実装するほうが分かりやすいかも。
     for wd in S.split():
         for ngw in ngw_by_len[len(wd)]:
@@ -35,7 +38,7 @@ def main():
 
             # 文字チェックが最後まで行き着く＝NGワードの条件を満たす
             # なら、****にして break。ここの break は、2 個目のfor
-            # に対して働く
+            # に対して働く。
             else:
                 result.append('*' * len(wd))
                 break
