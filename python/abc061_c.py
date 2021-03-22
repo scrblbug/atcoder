@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 061 C- Big Array
 # https://atcoder.jp/contests/abc061/tasks/abc061_c
-# tag: 基礎問題 計算量
+# tag: 考察
 
 # 制約が大きいので、馬鹿正直に配列に数字を一個一個入れていくのはよくない。
 # 下手すると 10^5 個の数字を 10^5 回入れた上で、ソートする羽目になる。
