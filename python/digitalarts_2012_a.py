@@ -1,6 +1,6 @@
 # DigitalArts プログラミングコンテスト 2012 A - C-Filter
 # https://atcoder.jp/contests/digitalarts2012/tasks/digitalarts_1
-# tag: 正規表現
+# tag: 文字列 正規表現
 
 # 単語ごとの判定なので、単語にばらしてから各NGワードと
 # 比較していくのが簡単だと思われる。
@@ -50,5 +50,3 @@ def main():
     print(' '.join(result))
 
 main()
-
-
