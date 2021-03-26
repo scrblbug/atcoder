@@ -21,7 +21,7 @@ def main():
         # 現在地の左側に棒があれば x 座標に -2
         elif x_now - 1 >= 0 and lottery[y][x_now - 1] == '-':
             x_now -= 2
-    
+
     # x 座標を n 本目に変換して出力
     result = x_now // 2 + 1
     print(result)
