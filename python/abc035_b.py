@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 035 B - ドローン
 # https://atcoder.jp/contests/abc035/tasks/abc035_b
-# tag: グリッド マンハッタン距離
+# tag: グリッド マンハッタン距離 高橋君
 
 # ひとまず不明な命令以外を見て、距離を測定する。
 # 不明な命令の分を考える場合、マンハッタン距離のみに注目すると、

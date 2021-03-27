@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 006 B - トリボナッチ数列
 # https://atcoder.jp/contests/abc006/tasks/abc006_2
-# tag: 基礎問題
+# tag: 基礎問題 数列
 
 # 特に悩むところの無い問題。変にメモなし再帰で解いたりして
 # ハマったりしないように……。

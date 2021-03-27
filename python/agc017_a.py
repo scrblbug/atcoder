@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 017 A - Biscuits
 # https://atcoder.jp/contests/agc017/tasks/agc017_a
-# tag: 考察 順列・組み合わせ
+# tag: 考察 順列・組み合わせ 高木君
 
 # 選んだ袋のなかのビスケットの合計を偶数 or 奇数にできる
 # 組み合わせの数を答える問題。
