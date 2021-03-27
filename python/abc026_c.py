@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 026 C - 高橋君の給料
 # https://atcoder.jp/contests/abc026/tasks/abc026_c
-# tag: グラフ 木 再帰関数 
+# tag: グラフ 木 再帰関数 高橋君
 
 # 解き方はいろいろあると思うが、ここでは再帰関数を用いて解いている。
 # 人数も少ないので、割と適当に書いてもどうにかなるだろう。
