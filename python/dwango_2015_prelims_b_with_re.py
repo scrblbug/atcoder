@@ -2,6 +2,8 @@
 # https://atcoder.jp/contests/dwango2015-prelims/tasks/dwango2015_prelims_2
 # tag: 文字列 正規表現 考察
 
+# せっかくなので、いろいろと試してみる
+
 # replaceを使って処理してやると、簡単になる
 def main():
     S = input()
@@ -16,7 +18,7 @@ def main():
     for s in S.split():
         result += (len(s) + 1) * len(s) // 2
     print(result)
-# main()
+main()
 
 # 正規表現を用いてもいい
 import re
@@ -34,6 +36,7 @@ def main3():
     regex = re.finditer(r'(25)+', S)
     result = 0
     for g in regex:
+        # group() はマッチ全体を返す
         n = len(g.group()) // 2
         result += (n + 1) * n // 2
     
@@ -43,6 +46,7 @@ def main3():
 import re
 def main4():
     S = input()
+    # findall の場合、25の繰り返し部を後から拾う必要がある
     regex = re.findall(r'((?:25)+)', S)
     result = 0
     for g in regex:
@@ -50,4 +54,4 @@ def main4():
         result += (n + 1) * n // 2
     
     print(result)
-main4()
+# main4()
