@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 006 B - あみだくじ
 # https://atcoder.jp/contests/arc006/tasks/arc006_2
-# tag: アスキーアート
+# tag: アスキーアート 基礎問題 高橋君
 
 # 与えられた文字列（アスキーアート）から情報を取り出し、
 # それを元に処理を行う必要がある問題。
