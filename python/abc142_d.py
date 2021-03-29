@@ -1,12 +1,13 @@
 # AtCoder Beginner Contest 142 D - Disjoint Set of Common Divisors
 # https://atcoder.jp/contests/abc142/tasks/abc142_d
-# tag: 公約数 素数 素因数分解 考察 素数列挙 最大公約数
+# tag: 公約数 素数 素因数分解 考察 素数列挙 最大公約数 エラトステネスの篩
 
 # まず、知っていると便利な事柄としては、ある二つの整数 A, B の
 # 公約数は、A, B の最大公約数の約数である。
 
 # さて、全てが互いに素の組み合わせを考える時、結論から言うと
 # 全ての公約数のうち、素数（と 1 ）の集合が、最大の個数となる。
+# 注意： 素数はほかの素数と、1 は他の全ての数と互いに素
 
 # 逆に素数でない数、つまり合成数を含む場合には、
 
@@ -19,7 +20,7 @@
 # ことから、明らか。
 
 # 以上をまとめると、求めるものは A, B の最大公約数を
-# 素因数分解し、得られる素数と 1 の集合の要素数ということになる。
+# 素因数分解し、得られた素数と 1 の集合の要素数ということになる。
 
 # エラトステネスの篩で素数列挙
 def get_prime_list(limit):
@@ -37,19 +38,29 @@ def get_prime_list(limit):
 
 # 素因数分解
 def prime_factorize(n):
+    # まずは、使用する素数を列挙しておく
     primes = get_prime_list(int(n**0.5))
+
     result = []
+
+    # n を素数で割っていくのを順番に試す
+    # 素数が n を越えたら終了
     for p in primes:
         if p >= n:
             break
+
+        # n が素数で割り切れるなら、指数を求めて答えに格納
         power = 0
         if n % p == 0:
             while n % p == 0:
                 power += 1
                 n //= p
             result.append((p, power))
+
+    # 最後に n が 1 になってなければ、素数が残っている
     if n > 1:
         result.append((n, 1))
+
     return result
 
 # 最大公約数
@@ -59,10 +70,12 @@ def gcd(x, y):
         x, y = y, x % y
     return x
 
+# ここから main()
 def main():
     A, B = map(int, input().split())
-    g = gcd(A, B)
 
+    # 最大公約数を求め、素因数分解し、要素数に +1 したものが答え
+    g = gcd(A, B)
     pf = prime_factorize(g)
     print(len(pf)+1)
 
