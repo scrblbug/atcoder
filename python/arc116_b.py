@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 116 B - Products of Min-Max
 # https://atcoder.jp/contests/arc116/tasks/arc116_b
-# tag: 考察 数列 MOD
+# tag: 考察 数列 部分列 足し合わせ MOD
 
 # 1 <= N <= 2 * 10^5 の制約が厳しく、正直にそのまま実装するのは
 # もちろんのこと、(L, R) を決めるような O(N^2) のやり方でも
