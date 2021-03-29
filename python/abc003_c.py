@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 003 C - AtCoderプログラミング講座
 # https://atcoder.jp/contests/abc003/tasks/abc003_3
-# tag: 考察
+# tag: 考察 高橋君
 
 # まず、動画のうちレートの高い上位 K 個を選ぶほうがいいのは自明。
 
