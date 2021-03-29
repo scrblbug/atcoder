@@ -1,6 +1,6 @@
-# AtCoder Beginner Contest D - Disjoint Set of Common Divisors
+# AtCoder Beginner Contest 142 D - Disjoint Set of Common Divisors
 # https://atcoder.jp/contests/abc142/tasks/abc142_d
-# tag: 公約数 素数 素因数分解 考察
+# tag: 公約数 素数 素因数分解 考察 素数列挙 最大公約数
 
 # まず、知っていると便利な事柄としては、ある二つの整数 A, B の
 # 公約数は、A, B の最大公約数の約数である。
@@ -19,9 +19,9 @@
 # ことから、明らか。
 
 # 以上をまとめると、求めるものは A, B の最大公約数を
-# 素因数分解し、得られる素数と 1 の集合、ということになる。
+# 素因数分解し、得られる素数と 1 の集合の要素数ということになる。
 
-# エラトステネスの篩
+# エラトステネスの篩で素数列挙
 def get_prime_list(limit):
     if limit < 2:
         return []
@@ -36,7 +36,7 @@ def get_prime_list(limit):
     return [2] + [p for p in range(3, limit+1, 2) if primep[p]==True]
 
 # 素因数分解
-def prime_factorization(n):
+def prime_factorize(n):
     primes = get_prime_list(int(n**0.5))
     result = []
     for p in primes:
@@ -53,6 +53,7 @@ def prime_factorization(n):
     return result
 
 # 最大公約数
+# もちろん math.gcd でもいいけど、せっかくなので……
 def gcd(x, y):
     while y:
         x, y = y, x % y
@@ -62,7 +63,7 @@ def main():
     A, B = map(int, input().split())
     g = gcd(A, B)
 
-    pf = prime_factorization(g)
+    pf = prime_factorize(g)
     print(len(pf)+1)
 
 main()
