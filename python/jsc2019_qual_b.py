@@ -47,7 +47,7 @@ def main():
     for n in cnt.values():
         rest += (N - n) * n
 
-    mult = ((K - 1) * K // 2) % MOD
+    mult = (K - 1) * K // 2
 
     result = (result + rest * mult // 2) % MOD
     print(result)
