@@ -21,13 +21,13 @@ def main():
     for check in range(1, N):
         angry_time = arrival[next_angry] + K
 
-        # バスが満員で次の客が乗れないなら、バスを出発＆準備
+        # バスが満員で次の客が乗れないなら、バスを出発＆もう1台用意
         if check - next_angry + 1 > C:
             result += 1
             next_angry = check
             continue
 
-        # 次の客の到着までに客が怒り出すなら、バスを出発＆準備
+        # 次の客の到着までに客が怒り出すなら、バスを出発＆もう1台用意
         time_now = arrival[check]
         if angry_time < time_now:
             result += 1
