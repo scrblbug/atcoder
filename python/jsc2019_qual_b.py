@@ -1,6 +1,6 @@
 # 第一回日本最強プログラマー学生選手権-予選- B - Kleene Inversion
 # https://atcoder.jp/contests/jsc2019-qual/tasks/jsc2019_qual_b
-# tag: 数列 転倒数 考察 MOD
+# tag: 数列 転倒数 考察 MOD 足し合わせ
 
 # A の中の数 Ai を考える。
 # 転倒数を求める、すなわち、各 Ai より大きな数が左側にいくつあるか ＆ 
