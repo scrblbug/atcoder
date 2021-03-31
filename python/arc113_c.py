@@ -2,7 +2,6 @@
 # https://atcoder.jp/contests/arc113/tasks/arc113_c
 # tag: 考察
 
-# 要するに
 # aabbbbb → aaabbbb → .... → aaaaaaa
 # という具合に、操作を繰り返すことで、同じ文字が二文字
 # 連続する部分から右側の文字列が同じ文字で埋められることになる。
@@ -15,10 +14,10 @@
 # 右から文字列を順番に見て、二文字連続していればそこから
 # 右端までを書き換える……という手順で行うことになる。
 
-# と、ここまでの考察で解いてみた、右から見ていく
-# やり方は、最後におまけで。
+# と、ここまでの考察でも、右から見ていくやり方で解ける。
+# このやり方は、最後におまけで。
 
-# さらに考察すると、各文字はそれ以前に現れている
+# さらに考察を進めると、各文字はそれ以前に現れている
 # 連続文字によって、それぞれ書き換えられることになる。
 # f.e.
 # aabbc → aabbb → aaabb → aaaab → aaaaa
@@ -64,7 +63,7 @@ def main():
         # 答えを書き換え回数分増やす
         result += replace_n
 
-        # が、前の連続文字と同じ文字なら減らす
+        # が、前の連続文字と同じ文字なら 1 減らす
         if S[i] == prev_seq:
             result -= 1
 
@@ -80,22 +79,32 @@ main()
 # 現れる場合、そこは書き換わらないのに注意。
 # つまり、現れた文字をそれぞれカウントしながら、逆順に
 # みていっている。
-# from collections import defaultdict
-# def main():
-#     S = input()
+from collections import defaultdict
+def main2():
+    S = input()
 
-#     result = 0
-#     cnt = defaultdict(int)
-#     prev_c = ""
-#     prev2_c = ""
-#     for i in range(len(S)-1, -1, -1):
-#         now_c = S[i]
-#         if now_c == prev_c != prev2_c:
-#             result += (len(S) - i - 1) - cnt[now_c]
-#             cnt = defaultdict(int, {now_c: len(S) - i - 1})
-#         cnt[now_c] += 1
-#         prev2_c, prev_c = prev_c, now_c
+    result = 0
+
+    # 文字カウント。
+    # 初めての文字が現れた時の処理を簡略にするよう、defaultdictで。
+    cnt = defaultdict(int)
+
+    # 前の文字と、前の前の文字
+    prev_c, prev2_c = "", ""
+
+    for i in range(len(S)-1, -1, -1):
+        now_c = S[i]
+
+        # 前と違う文字が二回連続で現れたら
+        if now_c == prev_c != prev2_c:
+            # そこから右がその文字に書き換えられるので、
+            # 該当文字を除く文字数を答えに加算。
+            result += (len(S) - i - 1) - cnt[now_c]
+            # カウントは全て書き変わった文字になる
+            cnt = defaultdict(int, {now_c: len(S) - i - 1})
+        cnt[now_c] += 1
+        prev2_c, prev_c = prev_c, now_c
     
-#     print(result)
+    print(result)
 
-# main()
+# main2()
