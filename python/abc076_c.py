@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 076 C - Dubious Document 2
 # https://atcoder.jp/contests/abc076/tasks/abc076_c
-# tag: 文字列 辞書順
+# tag: 文字列 辞書順 正規表現
 
 # 自明なこととして、辞書順最小を目指すので、? は可能な限り a に
 # 変えるほうがいい。
@@ -23,7 +23,9 @@ def main():
     result = -1
 
     # S 上の、|S| - |T| の地点から左に向かって、そこから右の文字列が
-    # T と一致 or 置換可能かどうかを探索していく
+    # T と一致 or 置換可能かどうかを探索していく。
+    # '(c|?)(o|?)(d|?)...' という感じで組み立てて、正規表現で
+    # やってしまう手もあるかもしれないが、やや煩雑かも。
     for start in range(len(S) - len(T), -1, -1):
         for i in range(len(T)):
             # 一文字ずつ一致 or 置換可能かどうかを確認
