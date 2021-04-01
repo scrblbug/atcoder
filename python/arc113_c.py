@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 113 C - String Invasion
 # https://atcoder.jp/contests/arc113/tasks/arc113_c
-# tag: 考察
+# tag: 考察 文字列
 
 # aabbbbb → aaabbbb → .... → aaaaaaa
 # という具合に、操作を繰り返すことで、同じ文字が二文字
