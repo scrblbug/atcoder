@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 011 C - 123引き算
 # https://atcoder.jp/contests/abc011/tasks/abc011_3
-# tag: 貪欲法 典型問題
+# tag: 貪欲法 典型問題 一人ゲーム
 
 # 小難しいことを考えると難しくなる問題。
 # N <= 300 なので素直に貪欲法で解き、最短手数が 100 以下に

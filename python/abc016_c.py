@@ -1,6 +1,6 @@
 # AtCoder Beginnaer Contest 016 C - 友達の友達
 # https://atcoder.jp/contests/abc016/tasks/abc016_3
-# tag: グラフ 
+# tag: グラフ 高橋君
 
 # 1 <= N <= 10 なので何も考えずに探索したあと、
 # 自分自身と友達を除いて出力する方針で……
@@ -14,16 +14,15 @@ def main():
     for a, b in relations:
         friends[a].append(b)
         friends[b].append(a)
-    
+
     # 友達の友達、つまりグラフ上で 2 回移動する先を全て求める。
-    # 今回は set でやってみることにしてみた。
-    # よほどまずい数え方をしなければ問題は起きないと思うが、
-    # 最速を目指すならビット演算とかでやってもいいかも？
+    # 今回は制約も緩いので set でやってみることにしてみた。
+    # いろいろやり方はあると思うが、今回の制約ならかなり効率の
+    # 悪い判定でも、きちんと組めていれば十分間に合うだろう。
     for i in range(1, N+1):
         f_of_f = set()
         for f in friends[i]:
-            for ff in friends[f]:
-                f_of_f.add(ff)
+            f_of_f = f_of_f | set(friends[f])
 
         # 自分自身と友達は引いて数える（集合演算）
         excludes = {i} | set(friends[i])
