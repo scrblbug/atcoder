@@ -33,10 +33,10 @@ def main2():
 import re
 def main3():
     S = input()
-    regex = re.finditer(r'(25)+', S)
+    match = re.finditer(r'(25)+', S)
     result = 0
-    for g in regex:
-        # group() はマッチ全体を返す
+    for g in match:
+        # group() はグルーピングした部分だけでなく、マッチ全体を返す
         n = len(g.group()) // 2
         result += (n + 1) * n // 2
     
@@ -47,9 +47,9 @@ import re
 def main4():
     S = input()
     # findall の場合、25の繰り返し部を後から拾う必要がある
-    regex = re.findall(r'((?:25)+)', S)
+    match = re.findall(r'((?:25)+)', S)
     result = 0
-    for g in regex:
+    for g in match:
         n = len(g) // 2
         result += (n + 1) * n // 2
     
