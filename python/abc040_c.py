@@ -82,6 +82,7 @@ def main2():
 
 
 # せっかくなのでメモ化再帰でも
+# 再帰の深さ制限を解除しておかないとREになるので注意
 import sys
 sys.setrecursionlimit(10**9)
 def main3():
