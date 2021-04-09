@@ -8,7 +8,7 @@
 # i+1 番目としているのは、0-indexed でテーブルを作成するからで、
 # それ以上の意味はない。（1 番目の柱に行くコスト = dp_table[0] = 0）
 
-# この DP が成立するのは、各移動が独立として考えることが可能なため。
+# この DP が成立するのは、各移動を独立して考えることが可能なため。
 # つまり、どのような経路を通って移動したかが問われないので、
 # i 番目の柱にコスト c で到達できた場合、その結果のみで
 # 計算結果をまとめることが出来る。
@@ -41,7 +41,6 @@ def main():
         cost = dpt[now] + abs(pillars[next_p] - pillars[now])
         dpt[next_p] = min(dpt[next_p], cost)
 
-
         # 二個先の柱に飛ぶ場合
         next_next_p = now + 2
 
@@ -57,7 +56,8 @@ def main():
 
 main()
 
-# せっかくなので、もらうDPでも……
+
+# ついでに、もらうDPでも……
 def main2():
     N = int(input())
     pillars = list(map(int, input().split()))
@@ -79,3 +79,31 @@ def main2():
     print(dpt[-1])
 
 # main2()
+
+
+# せっかくなのでメモ化再帰でも
+import sys
+sys.setrecursionlimit(10**9)
+def main3():
+    N = int(input())
+    pillars = list(map(int, input().split()))
+
+    memo = [-1] * N
+    memo[0] = 0
+
+    def get_min_cost(pos):
+        if memo[pos] != -1:
+            return memo[pos]
+
+        cost = get_min_cost(pos - 1) + abs(pillars[pos-1] - pillars[pos])
+
+        if pos > 1:
+            cost = min(cost, get_min_cost(pos-2) + abs(pillars[pos-2] - pillars[pos]))
+
+        memo[pos] = cost
+
+        return cost
+    
+    print(get_min_cost(N-1))
+
+# main3()
