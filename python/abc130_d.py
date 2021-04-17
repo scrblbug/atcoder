@@ -1,5 +1,5 @@
 # AtCoder Beginner Contest 130 D - Enough Array
-# https://atcoder.jp/contests/abc130/tasks/abc130_d[
+# https://atcoder.jp/contests/abc130/tasks/abc130_d
 # tag: 数列 部分列 数え上げ 累積和 尺取法 二分探索
 
 # 尺取法で解くのが最速。(O(N))
@@ -16,30 +16,30 @@ def main():
     N, K = map(int, input().split())
     A = list(map(int, input().split()))
 
-    # 区間左、区間右、現在の合計値
-    left, right, now = 0, 0, A[0]
+    # 区間左、区間右、現在の合計値 [left, right)
+    left, right, now = 0, 0, 0
     result = 0
     while True:
         # 条件を満たすまで区間右を伸ばす
         if now < K:
-            if right < N - 1:
-                right += 1
+            if right < N:
                 now += A[right]
+                right += 1
             # 伸ばしきっても条件を満たせなければ、終了
             else:
                 break
         # 条件を満たしているなら
         else:
-            # 答えを加算
-            result += N - right
+            # 答えを加算 (right の直前より右側は全て条件を満たす)
+            result += N - right + 1
             # 区間左を縮める
-            if left < N - 1:
+            if left < N:
                 now -= A[left]
                 left += 1
                 # 区間右に追いついている場合は、区間右も一つ右側にずらす
                 if right < left:
-                    right += 1
                     now += A[right]
+                    right += 1
             # すでに区間左が右端に到達していれば、終了
             else:
                 break

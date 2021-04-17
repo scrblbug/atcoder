@@ -25,11 +25,11 @@ def main():
         appeared[p] = True
 
     # 投稿が行われていないものを洗い出し
-    others = [i for i in range(1, N+1) if appeared[i]==False]
+    remains = [i for i in range(1, N+1) if appeared[i]==False]
 
     for t in posted:
         print(t)
-    for t in others:
+    for t in remains:
         print(t)
 
 main()
