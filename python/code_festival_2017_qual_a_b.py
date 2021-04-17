@@ -33,3 +33,31 @@ def main():
     print(result)
 
 main()
+
+# ところで、公式解説によると O(N) の解法があるとのこと。
+# そこで、反転している行数 n を固定して考えてみる。
+# すると、これから反転する m (0 <= m <= M) を動かした時に、
+# 全体の黒の数は初期値を M * n として、 m を 1 増やす毎に
+# N - n * 2 だけ増えていく。
+# ということは、(K - M * n) を (N - n * 2) で割ったときの
+# 商と余りを q, r とすると、 r = 0 かつ 0 <= q <= M の時に
+# 条件を満たすことが分かる。
+
+def main2():
+    N, M, K = map(int, input().split())
+    for n in range(N+1):
+        # N == n * 2 のときは、m を動かしても黒の数が変化しない。
+        # 初期値が K になっているかどうかで確認する。
+        if N == n * 2:
+            if K == M * n:
+                print('Yes')
+                break
+        else:
+            q, r = divmod(K - M * n, N - n * 2)
+            if r == 0 and 0 <= q <= M:
+                print('Yes')
+                break
+    else:
+        print('No')
+
+# main2()
