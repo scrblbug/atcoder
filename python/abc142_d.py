@@ -38,16 +38,13 @@ def get_prime_list(limit):
 
 # 素因数分解
 def prime_factorize(n):
-    # まずは、使用する素数を列挙しておく
+    # まずは、使用する素数を列挙しておく（n の平方根まで）
     primes = get_prime_list(int(n**0.5))
 
     result = []
 
     # n を素数で割っていくのを順番に試す
-    # 素数が n を越えたら終了
     for p in primes:
-        if p >= n:
-            break
 
         # n が素数で割り切れるなら、指数を求めて答えに格納
         power = 0
