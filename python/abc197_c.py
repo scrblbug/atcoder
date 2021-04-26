@@ -24,7 +24,7 @@ def main():
 
             # 仕切りが来たら、いままで or してきたものを
             # xor し、or 用の変数をリセット
-            if st & 1<<i:
+            if st>>i & 1:
                 xored ^= ored
                 ored = 0
 

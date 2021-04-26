@@ -45,7 +45,7 @@ def main():
             # 改めて素数を掛け合わせていき、実際の数を確認・比較する
             tmp_r = 1
             for i in range(len(primes)):
-                if 1<<i & st:
+                if st>>i & 1:
                     tmp_r *= primes[i]
             if tmp_r < result:
                 result = tmp_r
