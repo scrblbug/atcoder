@@ -50,7 +50,7 @@ def main():
         # ON なら lamp_status を変化させる
         for i in range(N):
             # スイッチは ON ？
-            if 1<<i & st:
+            if st>>i & 1:
                 for lmp in switches[i]:
                     # あるランプにつながっているスイッチが押されるたびに、
                     # 該当する lamp_status のビットを xor で反転させている。
