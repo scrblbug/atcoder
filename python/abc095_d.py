@@ -15,7 +15,7 @@
 # cw = clockwise, ccw = counter clockwiseとして、
 # i 個目の寿司まで食べた時の得するカロリーの最大値
 # cw_exit[i], cw_return[i], ccw_exit[i], cw_return[i]
-# の 4 種類の DP を事前に行っておく。
+# の 4 種類のテーブルを事前に作っておく。
 
 # そこから、cw / ccw, exit / return を組み合わせ、最大値を
 # 求めていく。
