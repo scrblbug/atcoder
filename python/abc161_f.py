@@ -39,8 +39,12 @@ def main():
     # 全部試し、条件が合うものを数える
     for d in divisor:
         tmp = N
+
+        # 割れるだけ割る
         while d != 1 and tmp % d == 0:
             tmp //= d
+        
+        # 減算を続ける＝割った余りになる
         if tmp % d == 1:
             result += 1
 
