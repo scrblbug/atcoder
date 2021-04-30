@@ -7,14 +7,13 @@
 # i 回目の操作後の変換行列をあらかじめ計算、保持しておき、
 # クエリごとに求める点の座標を変換して答えてやる。
 
-# 行列計算（numpy使うほうが楽かも）
-def m_by_m(m1, m2):
-    result = []
-    for r1 in m1:
-        tmp = []
-        for r2 in zip(*m2):
-            tmp.append(sum(e1 * e2 for e1, e2 in zip(r1, r2)))
-        result.append(tmp)
+# 行列計算（汎用性のあるコードだが速くはない）
+def mproduct(m1, m2):
+    result = [[0] * (len(m2[0])) for _ in range(len(m2))]
+    for x in range(len(m2[0])):
+        for y in range(len(m2)):
+            for i in range(len(m2)):
+                result[y][x] += m1[y][i] * m2[i][x]
     return result
 
 ##### ここからメイン
@@ -60,16 +59,15 @@ def main():
                       [ 0,  0,   1]]
 
         # 後の変換を前から掛けるので注意。
-        conv_ms.append(m_by_m(cm, conv_ms[-1]))
+        conv_ms.append(mproduct(cm, conv_ms[-1]))
 
     for a, b in queries:
         pos = points[b-1]
 
-        # アフィン変換に対応するよう 1 を追加しつつ
-        # 行列に変換
+        # アフィン変換に対応するよう 1 を追加しつつ行列に変換
         p = [[n] for n in (*pos, 1)]
 
-        result = m_by_m(conv_ms[a], p)
+        result = mproduct(conv_ms[a], p)
 
         # 末尾の 1 は出力しない
         print(*[e for r in result[:-1] for e in r])
