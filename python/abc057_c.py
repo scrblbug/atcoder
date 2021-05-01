@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest C - Digits in Multiplication
 # https://atcoder.jp/contests/abc057/tasks/abc057_c
-# tag: 約数列挙 基礎問題
+# tag: 整数 約数列挙 基礎問題
 
 # N = A * B を満たす整数の組、つまり N の約数を全列挙し、
 # F(A, B) の最小値を求める。

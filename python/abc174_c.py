@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 174 C - Repsept
 # https://atcoder.jp/contests/abc174/tasks/abc174_c
-# tag: 倍数 MOD
+# tag: 整数 倍数 MOD
 
 # そのまま計算すると数列の数字がとんでもなく大きくなるので、
 # MOD K を取って計算することを考える。

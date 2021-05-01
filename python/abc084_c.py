@@ -1,10 +1,10 @@
 # AtCoder Beginner Contest 084 C - Special Trains
 # https://atcoder.jp/contests/abc084/tasks/abc084_c
-# tag: 
+# tag: 愚直
 
 # 愚直にシミュレートしていけばいい。
 # 駅についた時、次に乗れる電車がいつくるのかを判定する
-# ところが、若干ややこしいかも。
+# ところが、若干ややこしいかも。割った余りをうまく使っていこう
 
 def main():
     N = int(input())
@@ -16,7 +16,7 @@ def main():
         # 駅 N に着いたらその時間を返す(0-indexedなので注意)
         if st == N - 1:
             return time
-        
+
         # 次に乗れる電車の時間を求める
         c, s, f = stations[st]
 
@@ -30,7 +30,7 @@ def main():
             # 電車の時間ぴったりなら、その電車に乗れる
             if late == 0:
                 next_train = time
-            
+
             # でなければ、次の電車
             else:
                 next_train = time + f - late
