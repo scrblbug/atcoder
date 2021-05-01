@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 094 D - Binomial Coefficients
 # https://atcoder.jp/contests/abc094/tasks/arc095_b
-# tag: 順列・組み合わせ 基礎問題
+# tag: 順列・組み合わせ 基礎問題 二項係数
 
 # 組み合わせ数の、ごく基本的な性質を訊かれている問題。
 

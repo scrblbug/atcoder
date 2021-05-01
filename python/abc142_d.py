@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 142 D - Disjoint Set of Common Divisors
 # https://atcoder.jp/contests/abc142/tasks/abc142_d
-# tag: 公約数 素数 素因数分解 考察 素数列挙 最大公約数 エラトステネスの篩
+# tag: 整数 公約数 素数 素因数分解 考察 素数列挙 最大公約数 エラトステネスの篩
 
 # まず、知っていると便利な事柄としては、ある二つの整数 A, B の
 # 公約数は、A, B の最大公約数の約数である。
