@@ -32,3 +32,28 @@ def main():
         print('Nothing')
 
 main()
+
+# せっかくなので再帰でも
+def main2():
+    N, K = map(int, input().split())
+    questions = [list(map(int, input().split())) for _ in range(N)]
+
+    def dfs(q_no, now):
+        if q_no == N:
+            if now == 0:
+                return True
+            else:
+                return False
+
+        for a in questions[q_no]:
+            if dfs(q_no+1, now^a):
+                return True
+        else:
+            return False
+
+    if dfs(0, 0):
+        print('Found')
+    else:
+        print('Nothing')
+
+# main2()
