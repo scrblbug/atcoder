@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 066 C - Lining Up
 # https://atcoder.jp/contests/arc066/tasks/arc066_a
-# tag: 考察
+# tag: 考察 MOD
 
 # N が奇数の時は、中央の一人が 0 で、
 # そこから端に向かって 2 ずつ増えていく。
