@@ -1,6 +1,6 @@
 # diverta 2019 Programming Contest C - AB Substrings
 # https://atcoder.jp/contests/diverta2019/tasks/diverta2019_c
-# tag: 文字列 連結 コーナーケース
+# tag: 考察 文字列 連結 コーナーケース
 
 # 各文字列内に含まれる "AB" はともかくとして。
 # それ以外に "AB" が現れるためには、
@@ -17,7 +17,7 @@
 # 4. 改めて全ての文字列を連結する
 
 # という手順を踏めば、無駄なく A, B を使用できる
-# A, B が無駄になるケースは
+# ちなみにA, B が無駄になるケースは
 
 # 1. A, B の数が不均等な場合（自明）
 # 2. "B*A" を連結したあと、その両端を
