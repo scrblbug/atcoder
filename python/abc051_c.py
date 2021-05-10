@@ -4,13 +4,13 @@
 
 # s:(0, 0) t:(1, 1) の時を考えてみると、
 
-# nml    
-# ojcd   
-# pabe   
-#  hgf   
+# jih    
+# kgtb   
+# lsac   
+#  fed   
 
 # 上図で
-# a b c d e f g h a j c l m n o p a
+# satbcdefsgthijkls
 # の順に行くのが最短（一例）
 
 # スタートとゴールが離れている場合は、途中を伸ばすだけでいい
