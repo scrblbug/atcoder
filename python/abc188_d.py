@@ -44,7 +44,7 @@ def main():
         result += (t - prev_t) * min(cost, prime_cost)
         cost += changes[t]
         prev_t = t
-    
+
     print(result)
 
 main()

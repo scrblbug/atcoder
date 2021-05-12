@@ -2,10 +2,14 @@
 # https://atcoder.jp/contests/abc049/tasks/arc065_a
 # tag: 文字列 考察
 
-# 文字列の途中の 'eraser' は、これで必ずひとまとまりになる。
-# 'eraser' を除いた後の 'erase' はひとまとまり。
-# 残りの 'dream' / 'dreamer' は、まず
-# 'dreamer' を確定させて、最後に 'dream' が確定。
+# 文字列の途中の 'eraser' は、'r' から開始する
+# ものが無いので、これで必ずひとまとまりに確定する。
+
+# 'eraser' を除いた後の 'erase' はひとまとまりに確定。
+
+# 残りの 'dream' / 'dreamer' は、まず'dreamer' を
+# 確定させて（erase, eraserが確定済みのため可能）、
+# 最後に 'dream' が確定。
 
 # というわけで、順番に各要素を空文字列に置き換えていき、
 # 文字列全体が最終的に空文字列になるなら、
