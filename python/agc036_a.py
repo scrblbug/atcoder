@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 036 A - Triangle
 # https://atcoder.jp/contests/agc036/tasks/agc036_a
-# tag: 計算幾何
+# tag: 計算幾何 面積 三角形
 
 # 二次元平面上において、ベクトル v1:(a, b), v2:(c, d)の
 # v1 x v2: (ad - bc) （スカラー値だが外積と呼ぶこともあるらしい）は、
