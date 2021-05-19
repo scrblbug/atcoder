@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 043 A - Range Flip Find Route
 # https://atcoder.jp/contests/agc043/tasks/agc043_a
-# tag: グリッド 経路探索 考察 DP
+# tag: グリッド 経路探索 範囲操作 考察 DP
 
 # 黒のマスを通る場合についてのみ考えてみる。
 # ある黒マス A から、ある黒マス B まで黒で経路がつながっている場合、

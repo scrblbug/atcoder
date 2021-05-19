@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 160 D - Line++
 # https://atcoder.jp/contests/abc160/tasks/abc160_d
-# tag: グラフ BFS 距離 数え上げ
+# tag: グラフ BFS 距離 最短距離 数え上げ
 
 # 最初に思いついたのは、それぞれの開始地点から、BFSで全探索。
 # 制約 (3 <= N <= 2000) で、O(N^2) なのでちゃんと間に合う。

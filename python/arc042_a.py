@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 042 A - 掲示板
 # https://atcoder.jp/contests/arc042/tasks/arc042_a
-# tag: 考察
+# tag: 並べ替え 考察
 
 # 投稿が行われたものは、行われていないものよりも前に来る。
 # また、最後に投稿されたものほど前に来る。

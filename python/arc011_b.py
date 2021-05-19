@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 011 B - ルイス・キャロルの記憶術
 # https://atcoder.jp/contests/arc011/tasks/arc011_2
-# tag: 愚直 辞書 コーナーケース
+# tag: 愚直 辞書変換 コーナーケース
 
 # 一種の暗号解読問題。
 # 解き方というのは特に無いので粛々と実装していく。

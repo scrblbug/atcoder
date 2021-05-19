@@ -1,6 +1,6 @@
 # CODE FESTIVAL 2015 あさぷろ Middle A - ヘイホーくんと最終試験
 # https://atcoder.jp/contests/code-festival-2015-morning-middle/tasks/cf_2015_morning_easy_c
-# tag: 基礎問題
+# tag: 平均値 ヘイホー君
 
 # この問題に限らず、基本的な方針として、なるべく小数を
 # 使用しないようにしたい。

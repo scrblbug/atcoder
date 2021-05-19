@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 037 C - 総和
 # https://atcoder.jp/contests/abc037/tasks/abc037_c
-# tag: 考察 数列 基礎問題
+# tag: 考察 数列 連続部分列 総和 基礎問題
 
 # 部分数列がずれていくイメージなので、
 # 足す数字も少しずらしていけばいい、みたいな発想で……。

@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 015 C - 高橋くんのバグ探し
 # https://atcoder.jp/contests/abc015/tasks/abc015_3
-# tag: 基礎問題 高橋君
+# tag: ビット演算 基礎問題 高橋君
 
 # 制約から、回答の組み合わせは高々 5^5 = 3125 通りなので
 # 全探索を行う。

@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 197 D - Opposite
 # https://atcoder.jp/contests/abc197/tasks/abc197_d
-# tag: 計算幾何 回転 基礎問題
+# tag: 計算幾何 座標 回転 基礎問題
 
 # 数学力が低いと解くのが厳しく見えるが、実は計算幾何では
 # かなり基礎的な問題とも言える。

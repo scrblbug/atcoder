@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 049 C - 白昼夢
 # https://atcoder.jp/contests/abc049/tasks/arc065_a
-# tag: 文字列 考察
+# tag: 文字列 連続部分列 考察
 
 # 文字列の途中の 'eraser' は、'r' から開始する
 # ものが無いので、これで必ずひとまとまりに確定する。

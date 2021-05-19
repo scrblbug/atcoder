@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 027 B - 島と橋
 # https://atcoder.jp/contests/abc027/tasks/abc027_b
-# tag: 高橋君
+# tag: 考察 高橋君
 
 # 左側から順番に、橋をかける必要があるかどうか判定していく。
 

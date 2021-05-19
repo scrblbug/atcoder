@@ -1,6 +1,6 @@
 # AtCoder Beginnaer Contest 016 C - 友達の友達
 # https://atcoder.jp/contests/abc016/tasks/abc016_3
-# tag: グラフ 高橋君
+# tag: グラフ 距離 高橋君
 
 # 1 <= N <= 10 なので何も考えずに探索したあと、
 # 自分自身と友達を除いて出力する方針で……

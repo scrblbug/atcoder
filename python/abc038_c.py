@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 038 C - 単調増加
 # https://atcoder.jp/contests/abc038/tasks/abc038_c
-# 数列 考察 数え上げ
+# 数列 考察 順列・組み合わせ 連続部分列 数え上げ
 
 # 単調増加になる [l, r] の組み合わせ数を求める。
 # 制約が 1 <= N <= 10^5 なので、[l, r] の全探索では間に合わない。

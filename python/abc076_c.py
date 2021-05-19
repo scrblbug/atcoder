@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 076 C - Dubious Document 2
 # https://atcoder.jp/contests/abc076/tasks/abc076_c
-# tag: 文字列 辞書順 正規表現
+# tag: 文字列 書き換え 辞書順 正規表現 E869120
 
 # 自明なこととして、辞書順最小を目指すので、? は可能な限り a に
 # 変えるほうがいい。

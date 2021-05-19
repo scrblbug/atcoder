@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 130 D - Enough Array
 # https://atcoder.jp/contests/abc130/tasks/abc130_d
-# tag: 数列 部分列 数え上げ 累積和 尺取法 二分探索
+# tag: 数列 連続部分列 数え上げ 累積和 尺取法 二分探索
 
 # 尺取法で解くのが最速。(O(N))
 # [左, 右] の区間を左を中心に考え、[0, 0] から始める。
