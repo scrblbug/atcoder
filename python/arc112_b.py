@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 112 B - -- - B
 # https://atcoder.jp/contests/arc112/tasks/arc112_b
-# tag: 考察 交差判定 すぬけ君
+# tag: 範囲 考察 交差判定 すぬけ君 整数屋
 
 # ここでは、僕がどんな感じで考えたのかを書いておく。
 # 公式解説とは少し違う流れだが、最終的には同じような

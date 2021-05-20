@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 040 C - 柱柱柱柱柱
 # https://atcoder.jp/contests/abc040/tasks/abc040_c
-# tag: DP 典型問題 基礎問題
+# tag: DP 典型問題 基礎問題 高橋君
 
 # 典型的かつ基礎的なDPで解ける問題。
 # dp_table[i] = i+1 番目の柱に行くための最小コスト

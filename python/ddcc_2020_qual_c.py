@@ -1,6 +1,6 @@
 # DISCO presents ディスカバリーチャンネルコードコンテスト2020予選 C - Strawberry Cakes
 # https://atcoder.jp/contests/ddcc2020-qual/tasks/ddcc2020_qual_c
-# tag: グリッド 分割
+# tag: グリッド 分割 chokudaiさん
 
 # 何通りも解き方はあると思うけど……ここではとりあえず
 

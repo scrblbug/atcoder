@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 005
 # https://atcoder.jp/contests/abc005/tasks/abc005_3
-# tag: 高橋君
+# tag: 愚直 高橋君
 
 # 制約も緩いので、素直に書かれている通りのことを
 # 実装していくだけ。

@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 113 C - ID
 # https://atcoder.jp/contests/abc113/tasks/abc113_c
-# tag: 事前ソート
+# tag: 事前ソート AtCoder国
 
 def main():
     N, M = map(int, input().split())

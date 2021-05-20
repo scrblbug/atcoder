@@ -1,6 +1,6 @@
 # 三井住友信託銀行プログラミングコンテスト2019 D - Lucky PIN
 # https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_d
-# tag: 貪欲法 高橋君
+# tag: 貪欲法 部分列 高橋君
 
 # 暗証番号は全部で1000種類なので、頑張って
 # それぞれが設定可能かどうか全探索してみる。
@@ -13,7 +13,7 @@ def main():
     N = int(input())
     S = input()
 
-result = 0
+    result = 0
 
     for i in range(1000):
         # 面倒くさいのでフォーマットリテラルで 0埋めした文字列で……
@@ -30,3 +30,4 @@ result = 0
     print(result)
 
 main()
+

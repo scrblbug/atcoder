@@ -1,6 +1,6 @@
 # diverta 2019 Programming Contest C - AB Substrings
 # https://atcoder.jp/contests/diverta2019/tasks/diverta2019_c
-# tag: 考察 文字列 連結 コーナーケース
+# tag: 考察 文字列 連結 連続部分列 最大数 コーナーケース すぬけ君
 
 # 各文字列内に含まれる "AB" はともかくとして。
 # それ以外に "AB" が現れるためには、

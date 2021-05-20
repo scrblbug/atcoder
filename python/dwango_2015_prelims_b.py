@@ -1,6 +1,6 @@
 # dwangoプログラミングコンテスト B - ニコニコ文字列
 # https://atcoder.jp/contests/dwango2015-prelims/tasks/dwango2015_prelims_2
-# tag: 文字列 正規表現 考察
+# tag: 文字列 正規表現 繰り返し 連続部分列 数え上げ 考察
 
 # "252525..." と N 回 "25" が繰り返されている文字列から、
 # 何回部分文字列が取り出せるかを考えてみる。

@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 048 B - Between a and b ...
 # https://atcoder.jp/contests/abc048/tasks/abc048_b
-# tag: 基礎問題 コーナーケース
+# tag: 整数 倍数 基礎問題 コーナーケース 数え上げ
 
 # 一見簡単だが、意外とコーナーケースに引っかかりがちな問題。
 # 余りの差分が～などと、ややこしく考え始めるとハマるので、

@@ -1,6 +1,6 @@
 # AtCoder Beginners Contest 125 D - Flipping Signs
 # https://atcoder.jp/contests/abc125/tasks/abc125_d
-# tag: 数列 考察
+# tag: 数列 総和 最大値 範囲操作 考察
 
 # 以下、-1 を乗算することを反転と称する。
 # 反転している、していないを 1, 0 で表すとする。

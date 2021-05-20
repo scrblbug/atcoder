@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 128 C - Switches
 # https://atcoder.jp/contests/abc128/tasks/abc128_c
-# tag: bit全探索, 典型問題
+# tag: bit全探索, ビット演算, 典型問題
 
 # 一見とんでもなく難しく見えるが、制限を見てみると
 # 1 <= N <= 10, 1 <= M <= 10 と少ない。

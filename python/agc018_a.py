@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 018 A - Getting Difference
 # https://atcoder.jp/contests/agc018/tasks/agc018_a
-# tag: 整数 公約数 考察
+# tag: 整数 公約数 最大公約数 考察
 
 # 数が多すぎるとよくわからなくなるので、
 # 2 つだけの時を考えてみる。

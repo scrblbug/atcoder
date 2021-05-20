@@ -1,6 +1,6 @@
 # CODE FESTIVAL 2017 qual A B- fLIP
 # https://atcoder.jp/contests/code-festival-2017-quala/tasks/code_festival_2017_quala_b
-# tag: グリッド 考察
+# tag: グリッド 範囲操作 考察
 
 # 各行・列のボタンに関しては、自由に入れ替え可能。
 # よって、最終的に問題になるのは、それぞれいくつずつ
@@ -47,7 +47,7 @@ def main2():
     N, M, K = map(int, input().split())
     for n in range(N+1):
         # N == n * 2 のときは、m を動かしても黒の数が変化しない。
-        # 初期値が K になっているかどうかで確認する。
+        # この場合は、初期値が K になっているかどうかで確認する。
         if N == n * 2:
             if K == M * n:
                 print('Yes')

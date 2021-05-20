@@ -1,6 +1,6 @@
 # Tenka1 Programmer Beginner Contest 2019 C - Stones
 # https://atcoder.jp/contests/tenka1-2019-beginner/tasks/tenka1_2019_c
-# tag: 考察
+# tag: 石並べ 考察
 
 # 最終的には、全ての白い石が黒い石より左側になければならない。
 # つまり、必ず

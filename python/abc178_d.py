@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 178 D - Redistribution
 # https://atcoder.jp/contests/abc178/tasks/abc178_d
-# tag: 数列 数え上げ DP
+# tag: 数列 総和 数え上げ DP
 
 # S = x の時の答えを、f(x) と書くとする。
 # f(x) が成立する数列が存在するとして、そのそれぞれの数列の

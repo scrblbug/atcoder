@@ -11,7 +11,7 @@ def main():
 
     # 1-indexed のままグラフを構成（どっちでもいいけど……）
     # グラフ～と聞くとややこしそうだが、各従業員ごとに
-    # 直属の部下をリストにしているだけ。
+    # 直属の部下をリストにしているだけ（隣接リスト）。
     paths = [[] for _ in range(N+1)]
     for i, boss in enumerate(path_dat, start=2):
         paths[boss].append(i)

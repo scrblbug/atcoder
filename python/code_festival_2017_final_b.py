@@ -1,6 +1,6 @@
 # CODE FESTIVAL 2017 Final B - Palindrome-phobia
 # https://atcoder.jp/contests/cf17-final/tasks/cf17_final_b
-# tag: 文字列 回文 考察 すぬけ君
+# tag: 文字列 回文 連続部分列 考察 すぬけ君
 
 # a, b, c の3文字で、条件を満たす文字列はどのようなものか考える。
 # まず、同じ文字が aa, bb のように連続すると、回文なのでNG。

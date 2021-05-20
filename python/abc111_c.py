@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 111 C - /\/\/\/
 # https://atcoder.jp/contests/abc111/tasks/arc103_a
-# tag: 数列 考察 コーナーケース
+# tag: 数列 書き換え 最小回数 考察 コーナーケース
 
 # 奇数番目、及び偶数番目のみで構成される数列を考える。
 # この二つの数列が、それぞれ同じ数字に統一されればいい。

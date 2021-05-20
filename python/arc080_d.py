@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 080 D - Grid Coloring
 # https://atcoder.jp/contests/arc080/tasks/arc080_b
-# tag: グリッド 特殊構造
+# tag: グリッド 特殊構造 構築
 
 # 同じ色なら全て繋がっている必要がある ＝ 繋がってさえいれば形は問わない
 # グリッド全体をひと筆書きできるような経路があれば、

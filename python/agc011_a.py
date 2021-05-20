@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 011 A - Airport Bus
 # https://atcoder.jp/contests/agc011/tasks/agc011_a
-# tag: 貪欲法
+# tag: 貪欲法 典型問題 高橋空港
 
 # 貪欲法を用いる。
 # すなわち、客が怒り出す寸前に、乗せられるだけ乗せた

@@ -27,9 +27,9 @@ def main():
         # 0 → 右端 → 左端の場合
         r_first = abs(candles[right]) + lr
 
-        # 今までの最小値の含めて比べ、一番小さいものを採用
+        # 今までの最小値を含めて比べ、一番小さいものを採用
         result = min(result, l_first, r_first)
-    
+
     print(result)
 
 main()

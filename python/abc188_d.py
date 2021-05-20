@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 188 D - Snuke Prime
 # https://atcoder.jp/contests/abc188/tasks/abc188_d
-# tag: 高橋君 座標圧縮 いもす法
+# tag: 高橋君 座標圧縮 いもす法 株式会社すぬけ
 
 # ひとまず、すぬけプライムを使用しなかった場合に
 # 費用をどのように求めるのかを考えてみる。

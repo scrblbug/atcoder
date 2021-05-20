@@ -1,6 +1,6 @@
 # 第二回全国統一プログラミング王決定戦予選 B - Counting of Trees
 # https://atcoder.jp/contests/nikkei2019-2-qual/tasks/nikkei2019_2_qual_b
-# tag: グラフ 木 構造 順列・組み合わせ MOD
+# tag: グラフ 木 特殊構造 順列・組み合わせ MOD
 
 # 頂点 1 を中心として、距離ごとに木を広げていくイメージ。
 # 一つ前の距離の頂点数を A 、今回の距離の頂点数を B とすると、

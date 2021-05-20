@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 009 B - おとぎの国の高橋君
 # https://atcoder.jp/contests/arc009/tasks/arc009_2
-# tag: 辞書 高橋君
+# tag: 辞書変換 高橋君 AtCoder国
 
 # AtCoder国と普通の数字の（文字列での）変換辞書を作成し、
 # AtCoder数を文字列で受け取り、普通の数字へと変換後、

@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 134 D - Preparing Boxes
 # https://atcoder.jp/contests/abc134/tasks/abc134_d
-# tag: 考察
+# tag: 考察 計算量 すぬけ君
 
 # i 個目の箱の中身を決定するに当たっては、
 # i*2, i*3, i*4... 個目の箱の中身が決定している必要がある。

@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 133 D - Rain Flows into Dams
 # https://atcoder.jp/contests/abc133/tasks/abc133_d
-# tag: 考察
+# tag: 循環 考察
 
 # 仮に 5 個ずつの山とダムで考えてみる。
 
