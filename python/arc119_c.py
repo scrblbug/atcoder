@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 119 C - ARC Wrecker 2
 # https://atcoder.jp/contests/arc119/tasks/arc119_c
-# tag: 範囲クエリ 累積和 順列・組み合わせ AtCoder街道 ARC解体業者 高橋君
+# tag: 範囲クエリ 累積和 順列・組み合わせ 数え上げ AtCoder街道 ARC解体業者 高橋君
 
 # ある範囲のビルの高さが、
 # [a, b, c, d] とする。
