@@ -32,7 +32,7 @@ def main():
     # 2: 青
     # 3: 矛盾
     # という感じでビットで色を管理
-    dist_color = [0] * (H+W-1)
+    color_by_dist = [0] * (H+W-1)
 
     for h in range(H):
         for w in range(W):
@@ -45,19 +45,19 @@ def main():
                 color = 0
 
             # 色はビット演算のORを利用して更新する
-            dist_color[dist] |= color
+            color_by_dist[dist] |= color
 
     result = 1
     # 距離別に見ていく
     for d in range(H+W-1):
         # 赤と青の両方の色があれば、矛盾なので 0 を
         # 返して終了する
-        if dist_color[d] == 3:
+        if color_by_dist[d] == 3:
             print(0)
             return
         # 色が決定していない時のみ、赤 or 青にできるので、
         # 2 を掛ける
-        elif dist_color[d] == 0:
+        elif color_by_dist[d] == 0:
             result = (result * 2) % MOD
 
     print(result)
