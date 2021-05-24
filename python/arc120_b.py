@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 120 B - Uniformly Distributed
 # https://atcoder.jp/contests/arc120/tasks/arc120_b
-# tag: グリッド 色塗り 特殊構造 数え上げ
+# tag: グリッド 色塗り 特殊構造 順列・組み合わせ 数え上げ
 
 # 次の 3 x 3 の経路を考えてみる。
 # 1 2 3
