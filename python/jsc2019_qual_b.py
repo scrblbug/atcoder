@@ -23,9 +23,8 @@ def main():
 
     MOD = 10**9 + 7
 
-    # A の中での転倒数を求める。内包表記を用いて
-    # inv_a = sum(1 if A[i] > A[j] else 0 for i in range(N-1) for j in range(i, N))
-    # みたいにも書けなくはない
+    # A の中での転倒数を求める。
+    # O(N logN) で求める方法もあるが、ここでは愚直に求めている。
     inv_a = 0
     for i in range(N-1):
         for j in range(i+1, N):
