@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 079 D - Wall
 # https://atcoder.jp/contests/abc079/tasks/abc079_d
-# tag: グラフ ワーシャル・フロイド法 典型問題
+# tag: グラフ 最小コスト ワーシャル・フロイド法 典型問題 joisinoお姉ちゃん
 
 # 各数字間の変換コストが与えられているので、
 # これを数字間に辺が張られたグラフと見なすと、
