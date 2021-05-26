@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 016 A - Shrinking
 # https://atcoder.jp/contests/agc016/tasks/agc016_a
-# tag: 考察
+# tag: 文字列 文字列変換 考察 すぬけ君
 
 # ある単一の文字 c にまとめることを考える。
 # c と c の間に文字が入っている時、
