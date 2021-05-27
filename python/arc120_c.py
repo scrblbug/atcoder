@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 120 C - Swaps 2
 # https://atcoder.jp/contests/arc120/tasks/arc120_c
-# tag: 数列 隣接入替 考察 転倒数
+# tag: 数列 隣接入替 考察 転倒数 フェニック木
 
 # 数字が左右に動く時、同時に +1 / -1 されることになる。
 # とりあえずどの数字をどこに移動させるべきかを知りたいので、
