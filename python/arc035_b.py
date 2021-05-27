@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 035 B - アットコーダー王国のコンテスト事情
 # https://atcoder.jp/contests/arc035/tasks/arc035_b
-# tag: 考察 事前ソート MOD
+# tag: 考察 順列・組み合わせ 数え上げ MOD アットコーダー王国 高橋くん様
 
 # 仮に全 3 問、かかる時間がそれぞれ a, b, c とすると、
 # 全体のペナルティは a + (a + b) + (a + b + c)
