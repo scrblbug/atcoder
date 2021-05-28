@@ -1,10 +1,10 @@
 # AtCoder Beginner Contest 088 D - Grid Repainting
 # https://atcoder.jp/contests/abc088/tasks/abc088_d
-# tag: グリッド BFS
+# tag: グリッド BFS すぬけ君 一人ゲーム
 
 # 最短手数で (1, 1) から (H, W) までたどり着くルートを見つけ、
 # その時通ったマス以外を全て黒に塗ったときが答え。
-# つまり、最短手数がわかれば、それでいい。
+# BFS で最短距離を求めればいい。
 
 from collections import deque
 def main():

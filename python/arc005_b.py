@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 005 B - P-CASカードと高橋君
 # https://atcoder.jp/contests/arc005/tasks/arc005_2
-# tag: グリッド 移動 反射
+# tag: グリッド 反射 高橋君
 
 # 反射するのをどう扱うか考える問題。
 # 解き方はいろいろあると思われる。
