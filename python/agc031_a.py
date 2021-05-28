@@ -1,6 +1,6 @@
 # AtCoder Grand Contest 031 A - Colorful Subsequence
 # https://atcoder.jp/contests/agc031/tasks/agc031_a
-# tag: 文字列 部分文字列 考察 MOD
+# tag: 文字列 部分文字列 順列・組み合わせ 数え上げ 考察 MOD
 
 # 文字の種類別に考えると、ある文字種 ch が n 回文字列に
 # 現れている場合、その文字をとりだす通り数は、n 箇所の
