@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 114 B - Special Subsets
 # https://atcoder.jp/contests/arc114/tasks/arc114_b
-# tag: グラフ 閉路 MOD
+# tag: グラフ 閉路 MOD 順列・組み合わせ 数え上げ
 
 # 条件を満たすのはどのような場合かを考えると、
 
