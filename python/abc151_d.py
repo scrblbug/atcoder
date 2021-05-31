@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 151 D - Maze Master
 # https://atcoder.jp/contests/abc151/tasks/abc151_d
-# tag: グリッド BFS 高橋君
+# tag: グリッド 再長距離 BFS 高橋君 青木君
 
 # どこからスタートするのかについて、全探索する。
 # 一回一回の各最長距離については、BFS で取得すればいい。

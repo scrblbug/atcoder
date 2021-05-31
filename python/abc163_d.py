@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 163 D - Sum of Large Numbers
 # https://atcoder.jp/contests/abc163/tasks/abc163_d
-# tag: 数え上げ MOD
+# tag: 考察 数え上げ MOD
 
 # 1 ~ N を全て足したとしても、10^100 よりは小さくなる。
 # つまり、この問題の本質は、足した数字の個数がカウント
