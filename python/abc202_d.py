@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 202 D - aab aba baa
 # https://atcoder.jp/contests/abc202/tasks/abc202_d
-# tag: 文字列 辞書順 順列・組み合わせ
+# tag: 文字列 辞書順 順列・組み合わせ パスカルの三角形
 
 # 上から順番に文字を決定していく。
 
