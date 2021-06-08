@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 172 D - Sum of Divisors
 # https://atcoder.jp/contests/abc172/tasks/abc172_d
-# tag: 考察
+# tag: 整数 約数 考察
 
 # 制約がかなり厳しく、O(N^2) はおろか、O(N logN)でも
 # 間に合いそうにない。
