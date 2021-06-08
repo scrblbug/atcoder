@@ -22,6 +22,7 @@ def main():
     mx = max(l)
     rest = sum(l) - mx
 
+    # 最大の円の面積
     result = math.pi * sum(l)**2
 
     # 原点を通れない場合は、内側の円の面積を引く

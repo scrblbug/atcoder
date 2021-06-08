@@ -9,7 +9,7 @@ def main():
     N = int(input())
     pressures = [int(input()) for _ in range(N)]
 
-    # set.sort() は出来ないが、sorted(set) は可能
+    # set.sort() は出来ないので注意。
     pr_set = sorted(set(pressures))
 
     # {元の値: 圧縮後の値} で辞書を作成

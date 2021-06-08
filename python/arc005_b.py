@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 005 B - P-CASカードと高橋君
 # https://atcoder.jp/contests/arc005/tasks/arc005_2
-# tag: グリッド 反射
+# tag: グリッド 反射 高橋君
 
 # 反射するのをどう扱うか考える問題。
 # 解き方はいろいろあると思われる。
@@ -21,7 +21,7 @@ def main():
     if 'R' in w:
         dx += 1
     
-    result = ''
+    result = []
 
     # ここでは、0123456787654321をワンセットと考え、
     # まず %= 16 したあと、前半部ならそのまま、
@@ -31,10 +31,10 @@ def main():
     for i in range(4):
         now_x = x % 16 if x % 16 < 9 else 16 - x % 16
         now_y = y % 16 if y % 16 < 9 else 16 - y % 16
-        result += field[now_y][now_x]
+        result.append(field[now_y][now_x])
         x += dx
         y += dy
     
-    print(result)
+    print(''.join(result))
 
 main()
