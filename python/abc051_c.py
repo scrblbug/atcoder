@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 051 C - Back and Forth
 # https://atcoder.jp/contests/abc051/tasks/abc051_c
-# tag: グリッド 考察
+# tag: グリッド 最短経路 愚直
 
 # s:(0, 0) t:(1, 1) の時を考えてみると、
 
