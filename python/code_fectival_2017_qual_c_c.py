@@ -1,6 +1,6 @@
 # CODE FESTIVAL 2017 qual C C - Inserting 'x'
 # https://atcoder.jp/contests/code-festival-2017-qualc/tasks/code_festival_2017_qualc_c
-# tag: 文字列 回文 すぬけ君
+# tag: 文字列 文字挿入 回文 すぬけ君
 
 # 'x' 以外の文字を挿入できないので、元の文字列の 'x' 以外の
 # 部分はあらかじめ回文になっている必要がある。
