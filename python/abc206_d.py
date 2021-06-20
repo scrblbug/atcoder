@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 206 D - KAIBUNsyo
 # https://atcoder.jp/contests/abc206/tasks/abc206_d
-# tag: 数列 回文 グラフ 連結成分 BFS DFS Union_Find
+# tag: 考察 数列 回文 グラフ 連結成分 BFS DFS Union_Find
 
 # a b c d e f g という数列と仮定して考えてみる。
 # 回文にするためには、(a b c) と (g f e) を一致させる
