@@ -1,4 +1,4 @@
-# AtCoder Beginner Contest 147 C - honestpOrUnkind2
+# AtCoder Beginner Contest 147 C - HonestOrUnkind2
 # https://atcoder.jp/contests/abc147/tasks/abc147_c
 # tag: bit全探索 典型問題
 

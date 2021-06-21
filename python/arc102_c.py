@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 102 C - Triangular Relationship
 # https://atcoder.jp/contests/arc102/tasks/arc102_a
-# tag: 考察
+# tag: 整数 倍数 考察 順列・組み合わせ 数え上げ
 
 # a + b, b + c, c + a が全て K の倍数ということは、
 # 全て足して 2 * (a + b + c) も K の倍数

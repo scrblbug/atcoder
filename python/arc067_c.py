@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 067 C - Factors of Factorial
 # https://atcoder.jp/contests/arc067/tasks/arc067_a
-# tag: 整数 約数 素因数分解 MOD
+# tag: 整数 約数 素因数分解 数え上げ MOD
 
 # N! の約数の個数をそのまま列挙していっては間に合わない。
 # 約数の数さえ分かればいいので、効率よく数える方法を
@@ -44,7 +44,7 @@ def main():
 
     # 素因数分解用に関数を作っておく
     # 渡された数を素因数分解し、{素因数: 個数} の
-    # カウンターを返す。
+    # 辞書を返す。
     def prime_factorization(num):
         result = Counter()
 

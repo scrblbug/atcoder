@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 161 D - Lunlun Number
 # https://atcoder.jp/contests/abc161/tasks/abc161_d
-# tag: キュー
+# tag: キュー 愚直
 
 # とりあえずどんな感じなのか、最初の方を手書きで列挙してみる
 # 1, 2, 3, 4, 5, 6, 7, 8, 9,

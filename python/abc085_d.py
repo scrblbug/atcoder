@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 085 D - Katana Thrower
 # https://atcoder.jp/contests/abc085/tasks/abc085_d
-# tag: 考察
+# tag: 考察 事前ソート 累積和
 
 # 攻撃方法としては、適切な回数振ってから、
 # 最後にまとめて投げると仮定する。
