@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 030 C - 飛行機乗り
 # https://atcoder.jp/contests/abc030/tasks/abc030_c
-# tag: 愚直
+# tag: 愚直 高橋君
 
 # そこまで難しい問題ではないが、時間をループ変数として取ると
 # 10^9 の制限によって時間切れになるので、飛行機の時刻表を
