@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 145 D - Knight
 # https://atcoder.jp/contests/abc145/tasks/abc145_d
-# tag: 二項係数 順列・組み合わせ 逆元 MOD コーナーケース
+# tag: 二項係数 順列・組み合わせ 逆元 MOD 典型問題 コーナーケース
 
 
 # まず何回動かすことになるのかを求める。（ n とする）
@@ -51,7 +51,9 @@ def main():
     # p = qa + r 両辺に A を掛けて
     # 0 = q + Ar (mod p) 両辺に R を掛けて
     # 0 = qR + A (mod p)
-    # A = -qR (mod p) （最初の仮定より r < a）
+    # A = -qR (mod p)
+    # 最初の仮定より r < a なので、下から順番に
+    # 逆元を求めていくことができる。
     inv = [1, 1]
     for i in range(2, n+1):
         inv.append((-(MOD // i) * inv[MOD % i]) % MOD)
