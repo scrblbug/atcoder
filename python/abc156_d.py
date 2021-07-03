@@ -30,10 +30,12 @@ def main():
     inv = [1] * (t + 1)
     inv_fact = [1] * (t + 1)
     # aの逆元をA、q, rをp/aの商と余り、rの逆元をRとしたとき、
-    # p = qa + r
-    # 0 = q + Ar (mod p)
+    # p = qa + r 両辺に A を掛けて
+    # 0 = q + Ar (mod p) 両辺に R を掛けて
     # 0 = qR + A (mod p)
-    # A = -qR (mod p) （定義より r < a）
+    # A = -qR (mod p)
+    # 最初の仮定より r < a なので、下から順番に
+    # 逆元を求めていくことができる。
     for i in range(2, t+1):
         inv[i] = (- (MOD // i) * inv[MOD % i]) % MOD
     for i in range(2, t+1):
