@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 160 E - Red and Green Apples
 # https://atcoder.jp/contests/abc160/tasks/abc160_e
-# tag: 考察 事前ソート
+# tag: 考察
 
 # 食べられる可能性があるリンゴに注目すると、
 # 赤色リンゴのうち上位 X 個は食べられる可能性がある。
