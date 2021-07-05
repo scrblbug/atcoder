@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 007 C - 幅優先探索
 # https://atcoder.jp/contests/abc007/tasks/abc007_3
-# tag: BFS 基礎問題
+# tag: BFS 基礎問題 高橋君
 
 # 普通に幅優先探索すればいい。
 from collections import deque
