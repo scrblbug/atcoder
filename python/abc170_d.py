@@ -1,4 +1,4 @@
-# AtCoder Beginner Contest 170
+# AtCoder Beginner Contest 170 D - Not Divisible
 # https://atcoder.jp/contests/abc170/tasks/abc170_d
 # tag: 整数 倍数 計算量 コーナーケース
 
