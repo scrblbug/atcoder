@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 039 D - 画像処理高橋君
 # https://atcoder.jp/contests/abc039/tasks/abc039_d
-# tag: グリッド 変換 隣接処理 高橋君
+# tag: グリッド 画像 変換 隣接処理 高橋君
 
 # 条件より、変換後の画像においてあるマスが白だった場合、
 # 変換前の画像ではそのマス及び隣接マスが白である必要がある。
