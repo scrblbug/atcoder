@@ -26,7 +26,7 @@ def main():
     if S[-1] == 'R':
         unhappy += 1
 
-    # 不幸な人数は、操作回数 * 2 減らせる。ただし最低一人はいる。
+    # 不幸な人数は、操作回数 * 2 減らせる。ただし 0 にはできない。
     unhappy = max(1, unhappy - 2*K)
 
     print(N - unhappy)
