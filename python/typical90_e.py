@@ -1,3 +1,7 @@
+# 競プロ典型90問 005 - Restricted Digits
+# https://atcoder.jp/contests/typical90/tasks/typical90_e
+# tag: 整数 倍数 剰余 ダブリング DP MOD
+
 # 桁DPの遷移を考える。
 # dpt[n][r] : n 桁の数字で mod B が r となる通り数。
 
