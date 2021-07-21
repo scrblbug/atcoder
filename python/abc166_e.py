@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 166 E - This Message Will Self-Destruct in 5s
 # https://atcoder.jp/contests/abc166/tasks/abc166_e
-# tag: 考察 順列・組み合わせ 数え上げ
+# tag: 考察 事前操作 順列・組み合わせ 数え上げ AtCoder王国 AlDebaran王国
 
 # ある人物の番号を n, 身長を h とする。
 # この人物とペアになり得る人の番号を m, 身長を g とすると、
