@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 140 D - Face Produces Unhappiness
 # https://atcoder.jp/contests/abc140/tasks/abc140_d
-# tag: 考察 列 反転
+# tag: 考察 列 反転 コーナーケース
 
 # 不幸になっている人は、端を除けば必ず 'RL' の形を取っている。
 
