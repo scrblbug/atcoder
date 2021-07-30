@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 194 E - Mex Min
 # https://atcoder.jp/contests/abc194/tasks/abc194_e
-# tag: 数列 MEX 尺取法
+# tag: 数列 MEX 最小値 尺取法
 
 # 最小値さえ求まればいいので、途中で
 # 個数が 0 になる整数を列挙できればいい……
