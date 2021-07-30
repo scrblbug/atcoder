@@ -1,10 +1,11 @@
 # AtCoder Beginner Contest 115 D - Christmas
 # https://atcoder.jp/contests/abc115/tasks/abc115_d
-# tag: 再帰 高羽氏 ルンルン
+# tag: 再帰関数 高羽氏 ルンルン
 
 # 再帰構造を持っているので、そのまま
 # 書き起こすと書きやすいかもしれない。
-# 5層構造なので、そこをサボらずに書いていく。
+# 5層構造なので、そこをきちんとサボらずに書いていくと
+# バグらせにくい。
 
 def main():
     N, X = map(int, input().split())
