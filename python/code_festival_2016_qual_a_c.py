@@ -2,6 +2,11 @@
 # https://atcoder.jp/contests/code-festival-2016-quala/tasks/codefestival_2016_qualA_c
 # tag: 文字列 変換 辞書順 高橋君
 
+# 各文字を変換する際には、
+# 1) a に変換可能なら、変換する
+# 2) a に変換できないなら、変換しないほうがいい
+# ということを踏まえて組んでいく
+
 def main():
     s = input()
     K = int(input())
