@@ -28,12 +28,13 @@ def main():
     for g in groups:
         # 'D' を順番に数えつつ探し、左端に持っていくための
         # 操作回数を足していく
-        cnt_d = 0
+        cnt_a = 0
         for idx, c in enumerate(g, start=1):
-            if c == 'D':
-                cnt_d += 1
-                result += idx - cnt_d
-    
+            if c == 'A':
+                cnt_a += 1
+            elif c == 'D':
+                result += cnt_a
+
     print(result)
 
 main()
