@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 110 C - Exoswap
 # https://atcoder.jp/contests/arc110/tasks/arc110_c
-# tag: 数列 隣接操作 並び替え
+# tag: 数列 隣接操作 並び替え 考察
 
 # a b c 1 d e
 # のようなケースを考えると、この 1 を左端へ持っていくには、
