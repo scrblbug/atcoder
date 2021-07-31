@@ -30,36 +30,27 @@ def main():
 
     result = []
 
-    # 次の数字。next-1 までは確定済みとする
-    next = 1
+    # 次の数字。next-1 までは確定済みとする。
+    nxt = 1
 
-    while next < N:
-        # 次の数字の場所を探す。
-        # 考察よりP[next] 以降でなければならない。
-        next_idx = next
-        while next_idx < N:
-            if P[next_idx] == next:
-                break
-            next_idx += 1
-        # 見つからなければ矛盾
-        if next_idx == N:
-            print(-1)
-            return
-        
-        # 見つかった次の数字を持ってくる操作を行う。
-        # 数字自体は、見つかった場所の一つ手前までが確定する。
-        for i in range(next_idx, next-1, -1):
-            P[i-1], P[i] = P[i], P[i-1]
-            result.append(i)
-        
-        next = next_idx + 1
+    # 左端から順に見ていく。
+    for idx, v in enumerate(P):
+        # 数字が見つかったら、本来の場所まで持っていく
+        if v == nxt:
+            for i in range(idx, nxt-1, -1):
+                P[i-1], P[i] = P[i], P[i-1]
+                result.append(i)
+            nxt = idx + 1
+
+    # 操作をきちんと1回ずつ行っているか？
+    if len(result) != N-1:
+        print(-1)
     
-    # きちんと並び替わっているかどうかを確認
-    if all(v == i for i, v in enumerate(P, start=1)):
+    # 数字がちゃんと並び替わっているかどうかを確認
+    if all(i==v for i, v in enumerate(P, start=1)):
         for r in result:
             print(r)
     else:
         print(-1)
-        return
 
 main()
