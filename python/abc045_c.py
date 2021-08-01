@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 045 C - たくさんの数式
 # https://atcoder.jp/contests/abc045/tasks/arc061_a
-# tag: bit全探索
+# tag: bit全探索 典型問題
 
 def main():
     S = input()
@@ -9,6 +9,7 @@ def main():
 
     # ある文字の直後に '+' を入れるかどうかで全探索
     for st in range(1<<(len(S)-1)):
+        # 現在の数字
         tmp = 0
         for i, c in enumerate(S):
             # 前の数字と繋げる。
