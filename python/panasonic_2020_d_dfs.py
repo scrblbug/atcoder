@@ -1,4 +1,4 @@
-# dfs を用いて順に生成することも出来る。
+# dfs を用いて再帰で順に生成することも出来る。
 def main():
     N = int(input())
     ab = 'abcdefghijklmnopqrstuvwxyz'
@@ -21,4 +21,3 @@ def main():
         print(''.join(ab[i] for i in r))
 
 main()
-
