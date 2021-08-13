@@ -12,7 +12,7 @@
 # ADA C C B ADDAAD B
 # となり、この ADA と ADDAAD を考慮することになる。
 
-# それぞれの塊を、DD..DAA...A という状態になるまで
+# それぞれの塊を、DD..DAA..A という状態になるまで
 # 操作すれば、それが最大の回数となる。
 
 import re
@@ -27,8 +27,11 @@ def main():
 
     for g in groups:
         # 'D' を順番に数えつつ探し、左端に持っていくための
-        # 操作回数を足していく
+        # 操作回数を足していく。
         cnt_a = 0
+
+        # 具体的には、そこまでに現れた "A" の個数だけ
+        # "D" を左に移動することが出来る。
         for idx, c in enumerate(g, start=1):
             if c == 'A':
                 cnt_a += 1

@@ -1,6 +1,6 @@
 # パナソニックプログラミングコンテスト2020 D - String Equivalence
 # https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_d
-# tag: 文字列 辞書順 考察
+# tag: 文字列 辞書順 生成 考察
 
 # ある任意の文字列を、標準形に変換することを考える。
 # zyxzx の場合を仮に考える。

@@ -1,11 +1,13 @@
 # AtCoder Regular Contest 110 C - Exoswap
 # https://atcoder.jp/contests/arc110/tasks/arc110_c
-# tag: 数列 隣接操作 並び替え 考察
+# tag: 数列 隣接操作 並び替え 愚直 考察
+
+# 実際の操作について考察してみる。
 
 # a b c 1 d e
 # のようなケースを考えると、この 1 を左端へ持っていくには、
 # a b c 1 d e
-#  3 2 1
+#  3 2 1  ←入れ替え順
 # 1 より左側の入れ替えについては、必ずこの順番で行う
 # 必要がある。
 # また、この操作を行った後、
@@ -40,6 +42,8 @@ def main():
             for i in range(idx, nxt-1, -1):
                 P[i-1], P[i] = P[i], P[i-1]
                 result.append(i)
+            # 元々あった場所の左までは数字が確定している（はず）
+            # なので、それに合わせて次に探す数字を更新する。
             nxt = idx + 1
 
     # 操作をきちんと1回ずつ行っているか？
