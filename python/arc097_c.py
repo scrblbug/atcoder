@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 097 C - K-th Substring
 # https://atcoder.jp/contests/arc097/tasks/arc097_a
-# tag: 文字列 部分連続列 辞書順 考察
+# tag: 文字列 連続部分列 辞書順 考察
 
 # 1 <= K <= 5 という制限がポイント。
 # 求める文字列は、必ず 5 文字以内の長さになる。

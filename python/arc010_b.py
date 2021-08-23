@@ -16,7 +16,7 @@ def main():
     for d in days_of_month:
         csum_days.append(csum_days[-1] + d)
 
-    # 祝日を数値に返還しつつ取り出しておく
+    # 祝日を数値に変換しつつ取り出しておく
     holidays = []
     for s in holiday_dat:
         mth, dy = map(int, s.split('/'))
@@ -36,7 +36,7 @@ def main():
     stack = 0   # 消化予定の休日数
 
     for d in range(366):
-        # 土日 or 祝日なら消化予定に加える
+        # 土日 or 祝日なら消化予定の休日数に加える
         if weekendp(d):
             stack += 1
         
