@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 091 D - Remainder Reminder
 # https://atcoder.jp/contests/arc091/tasks/arc091_b
-# tag: 整数 数え上げ 剰余 コーナーケース
+# tag: 整数 数え上げ 剰余 コーナーケース 高橋君
 
 # a % b >= K (1 <= a <= N, 1 <= b <= N) が条件。
 # a に対応する b を数えるのは大変そうなので、
