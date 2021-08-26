@@ -24,30 +24,26 @@
 def main():
     N, M, Q = map(int, input().split())
     score_conds = [list(map(int, input().split())) for _ in range(Q)]
-    seqs = []
-
-    # DFS で数列を生成する再帰関数を定義。
-    def dfs(seq):
-        if len(seq) == N:
-            seqs.append(seq)
-            return
-        minimum = seq[-1] if len(seq) > 0 else 1
-        for nxt in range(minimum, M+1):
-            dfs(seq + [nxt])
-
-    # 数列を生成する。
-    dfs([])
 
     result = 0
 
-    # 数列ごとに得点を計算し、最大の得点を求める。
-    for seq in seqs:
-        score = 0
-        for a, b, c, d in score_conds:
-            if seq[b-1] - seq[a-1] == c:
-                score += d
-        if score > result:
-            result = score
+    # DFS で数列を生成しつつ、得点を計算していく。
+    queue = [[]]
+    while queue:
+        now = queue.pop()
+        # 数列が完成したら、得点計算する。
+        if len(now) == N:
+            score = 0
+            for a, b, c, d in score_conds:
+                if now[b-1] - now[a-1] == c:
+                    score += d
+            if score > result:
+                result = score
+        # 数列が完成するまでは、伸ばしていく。
+        else:
+            minimum = now[-1] if now else 1
+            for nxt in range(minimum, M+1):
+                queue.append(now + [nxt])
 
     print(result)
 
