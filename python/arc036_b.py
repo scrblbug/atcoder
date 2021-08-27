@@ -25,10 +25,15 @@ def main():
         return
 
     # 境界を確認していく。
+    # 左端
     borders = [0]
+
+    # 減少→増加と転じている地点
     for i in range(1, N-1):
         if field[i-1] > field[i] < field[i+1]:
             borders.append(i)
+
+    # 右端
     borders.append(N-1)
 
     # 求めた境界を元に、各山の幅を求めていく。

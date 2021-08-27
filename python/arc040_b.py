@@ -2,6 +2,9 @@
 # https://atcoder.jp/contests/arc040/tasks/arc040_b
 # tag: 考察 愚直 高橋君
 
+# 塗られていない地点へ行き、銃を発射するのを繰り返すのが最短。
+# ただし、必要以上に右には移動しないこと。
+
 def main():
     N, R = map(int, input().split())
     field = [c for c in input()]
@@ -22,8 +25,6 @@ def main():
     # 現在地
     pos = 0
 
-    # 塗られていない地点へ行き、銃を発射するのを繰り返す。
-    # ただし、必要以上に右には移動しない。
     for i, c in enumerate(field):
         if c == 'o':
             continue
