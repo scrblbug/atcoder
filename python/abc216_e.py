@@ -1,5 +1,6 @@
 # AtCoder Beginner Contest E - Amusement Park
 # https://atcoder.jp/contests/abc216/tasks/abc216_e
+# tag: 考察 二分探索 高橋君 コーナーケース
 
 # 楽しさが一番大きいものに乗り続けるのが最善。
 # 1 <= K <= 2*10^9 という制約から、愚直にシミュレートすると
