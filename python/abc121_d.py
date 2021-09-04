@@ -1,3 +1,6 @@
+# AtCoder Beginner Contest 121 D - XOR World
+# https://atcoder.jp/contests/abc121/tasks/abc121_d
+# tag: ビット演算 考察
 
 # XOR は交換法則が成り立つので、好きな順で行ってもいい。
 # また、任意の数 x について、 x XOR x = 0 となるので、
