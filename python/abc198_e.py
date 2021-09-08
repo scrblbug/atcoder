@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 198 E - Unique Color
 # https://atcoder.jp/contests/abc198/tasks/abc198_e
-# tag: グラフ 木 dfs
+# tag: グラフ 木 DFS
 
 # 実は当初提出した回答では、色を set で管理し、
 # dfs(prev, now, color_set) という感じで set のコピーを
