@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 121 B - RGB Matching
 # https://atcoder.jp/contests/arc121/tasks/arc121_b
-# tag: 考察
+# tag: 数列 考察 二分探索
 
 # 明らかに同じ色の犬同士をペアにするほうがいいのだが、
 # 頭数が奇数なら余りが出てしまうことがある。
