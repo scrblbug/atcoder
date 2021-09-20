@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 048 C - Boxes and Candies
 # https://atcoder.jp/contests/abc048/tasks/arc064_a
-# tag: 貪欲法
+# tag: 貪欲法 すぬけ君
 
 # 左端から連続する2つをセットに順に見ていき、必要な数だけ
 # 食べていく。ただし、セットのうちなるべく右側から食べる。
