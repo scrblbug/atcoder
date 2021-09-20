@@ -1,4 +1,4 @@
-# Atcoder Beginner contest 006 c - スフィンクスのなぞなぞ
+# Atcoder Beginner contest 006 C - スフィンクスのなぞなぞ
 # https://atcoder.jp/contests/abc006/tasks/abc006_3
 # tag: 考察
 
