@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 081 D - Coloring Dominoes
 # https://atcoder.jp/contests/arc081/tasks/arc081_b
-# tag: 考察 DP ドミノ すぬけ君
+# tag: 考察 DP ドミノ 敷き詰め MOD 数え上げ すぬけ君
 
 # 左端から敷き詰めていくことを考える。
 # 敷き詰め方は、縦置きで 2マス埋めるか、

@@ -1,6 +1,6 @@
 # AtCoder Regular Contest 002 C - コマンド入力
 # https://atcoder.jp/contests/arc002/tasks/arc002_3
-# tag: DP
+# tag: DP 高橋君
 
 # ショートカットの組み合わせを全探索する。
 # 各ショートカットの組み合わせごとの最小入力回数は、
