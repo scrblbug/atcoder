@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 132 D - Blue and Red Balls
 # https://atcoder.jp/contests/abc132/tasks/abc132_d
-# tag: 数え上げ 二項定理 パスカルの三角形 MOD 順列・組み合わせ
+# tag: 数え上げ 二項定理 パスカルの三角形 MOD 順列・組み合わせ 高橋君 すぬけ君
 
 # 青が i 個の塊になっている必要がある。
 # 仮に i = 2 の場合の通り数を見つつ、一般化を試みる。

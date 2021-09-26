@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 042 C - こだわり物いろはちゃん
 # https://atcoder.jp/contests/abc042/tasks/arc058_a
-# tag: 愚直 考察
+# tag: 愚直 いろはちゃん
 
 # N 円から順に 1 円ずつ増やしながら、条件に合った金額か
 # どうか確かめる。
