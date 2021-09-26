@@ -32,7 +32,7 @@ def main():
             A.append(X)
             seen[X] = idx
 
-    # before_loop: ループが始まるまでの数列の数
+    # before_loop: ループが始まるまでの数列の要素数
     # loop: A[before_loop] 以降繰り返されるループ内容
 
     # 求める範囲が、ループに入る前までの場合。
