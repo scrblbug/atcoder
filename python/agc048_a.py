@@ -35,9 +35,8 @@ def main():
                 break
 
             # t より大きい文字なら動かすのは二番目まででいい。
-            # ただし元々左端なら 0 を返す。
             else:
-                print(max(0, i-1))
+                print(i-1)
                 break
         # a 以外の文字が見つからなければ、-1 を返す。
         else:
