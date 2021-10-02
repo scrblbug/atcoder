@@ -1,6 +1,6 @@
 # AtCoder Beginner Contest 070 D - Transit Tree Path
 # https://atcoder.jp/contests/abc070/tasks/abc070_d
-# tag: グラフ 木 最短距離 典型問題
+# tag: グラフ 木 最短距離 基礎問題
 
 # x から、K を経由しつつ y に行く最短距離を求めるためには、
 # x → K の最短距離と、K → y の最短距離が必要。
