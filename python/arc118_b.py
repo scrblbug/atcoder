@@ -2,10 +2,11 @@
 # https://atcoder.jp/contests/arc118/tasks/arc118_b
 # tag: 整数 分割 差分最少 ARC国
 
-# max(|B/M - A/N|) を最少にしたい。
+# max(sum(|B/M - A/N|)) を最少にしたい。
 
-# とりあえず、各レーティングに対して floor(A * M / N) を
-# 振り分ける。若干振り分ける人数が足りなくなるが、その残りを
+# とりあえず、各レーティングに対して、 A * M // N 人を
+# 振り分ける（厳密値の切り捨てにあたる）。
+# 若干振り分ける人数が足りなくなるが、その残りを
 # どのように振り分けるか。
 
 # 上記振り分け後の厳密値（誤差 0 になる有理数人数）に対する誤差は、
@@ -15,13 +16,12 @@
 # 各レーティングごとの |B/M - A/N| （あるいは |N*B - M*A|）が
 # 大きいものから順に、一人ずつ割り振ってやればいい。
 
-import math
 def main():
     K, N, M = map(int, input().split())
     ratings = list(map(int, input().split()))
 
     # 暫定振り分け
-    result = [math.floor(M * a / N) for a in ratings]
+    result = [M * a // N for a in ratings]
 
     # 残り人数
     rem = M - sum(result)
