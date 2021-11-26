@@ -71,8 +71,8 @@ def main2():
         # 三分探索で、最小値を返す場所を求める
         left, right = min(nums), max(nums)
         while right - left > 0.00001:
-            mid1 = left + (right - left) / 3
-            mid2 = left + (right - left) * 2 / 3
+            mid1 = (left * 2 + right) / 3
+            mid2 = (left + right * 2) / 3
             if get_cost(mid1, nums) > get_cost(mid2, nums):
                 left = mid1
             else:
