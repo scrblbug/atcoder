@@ -1,6 +1,6 @@
 # CODE FESTIVAL 2016 Final B - Exactly N points
 # https://atcoder.jp/contests/cf16-final/tasks/codefestival_2016_final_b
-# tag: 最小の最大値 二分探索 考察, 高橋君
+# tag: 最小の最大値 二分探索 考察 高橋君
 
 # 解いた問題の最大点が X 点の時、何点まで取れるかを
 # 考えてみる。当然、その最大値は 1 ～ X 点の問題を
