@@ -3,9 +3,6 @@
 # これを Union Find で管理しつつ、順次（逆から）答えを
 # 求めていくことが可能。
 
-from typing import Union
-
-
 class Union_Find:
     # 親管理リストと高さ管理リストを初期化し、
     # 要素N個のUnion-Find森を作成する。
